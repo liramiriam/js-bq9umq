@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- icone materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>AM Cinema</title>
+</head>
+
+<body>
+    <div id="app">
+        <header >
+
+            <nav class="header">
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-medium-and-up"><i class="material-icons medium white-text">menu</i></a>
+                <div style="font-size: 20px;">AM Cinema</div>
+            </nav>
+
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <router-link class="waves-effect" to="/"><i class="material-icons">home</i>Home</a>
+                </li>
+                <li>
+                    <router-link class="waves-effect" to="/about"><i class="material-icons">person</i>About me</a>
+                </li>
+                <li>
+                    <router-link class="waves-effect" to="/portfolio"><i class="material-icons">image</i>Portfolio</a>
+                </li>
+                <li>
+                    <router-link class="waves-effect" to="/contatti"><i class="material-icons">mail</i>Contatti</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <router-view></router-view>
+            </div>
+            <div id="homepage">
+                <App1> </App1>
+                
+            </div>
+        </main>
+
+       <footer class="footer"></p></footer>
+
+    </div>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- vue.js -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- vue router -->
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <!-- custom js -->
+    <script src="main.js"></script>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>
